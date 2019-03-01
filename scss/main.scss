@@ -209,13 +209,9 @@ body {
 /* About section */
 .about {
   padding-bottom: 130px;
-
   &-wrap {
-    background: url('../img/dish.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right 50px;
-    height: 630px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__content {
@@ -243,6 +239,13 @@ body {
     width: auto;
     margin-left: 10%;
   }
+
+  &__bg-img {
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    max-width: 621px;
+  }
 }
 
 
@@ -257,7 +260,6 @@ body {
     margin-left: auto;
     text-align: center;
     width: 570px;
-    height: 557px;
     border: 1px solid rgba(#fbf7c0, .1);
     background-color: rgba(#000000, .6);
   }
@@ -265,6 +267,7 @@ body {
   &__content {
     width: 410px;
     margin: 0 auto;
+    padding-bottom: 70px;
   }
 
   &__title {
