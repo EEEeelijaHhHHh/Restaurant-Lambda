@@ -19,10 +19,10 @@
   const menu = document.querySelector('.nav-menu');
   const menuLink = document.querySelectorAll('.nav-menu__link');
 
-  button.addEventListener('click', () => toggleMenu());
+  button.addEventListener('click', toggleMenu);
 
   menuLink.forEach(link => {
-    link.addEventListener('click', () => toggleMenu());
+    link.addEventListener('click', toggleMenu);
   });
 
   function toggleMenu() {
