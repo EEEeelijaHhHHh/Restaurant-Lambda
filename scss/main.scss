@@ -94,6 +94,11 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  padding-top: 34px !important;
+
+  &__btn {
+    display: none;
+  }
 
   &-menu {
     display: flex;
