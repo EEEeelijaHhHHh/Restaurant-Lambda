@@ -214,8 +214,8 @@
         padding-top: 0;
         border: none;
 
-        &:hover {
-          border: none;
+        &::before {
+          display: none;
         }
       }
     }
@@ -317,6 +317,7 @@
 
   .about {
     padding-bottom: 0;
+
     &__content {
       padding: 40px 25px;
       padding-bottom: 40px;

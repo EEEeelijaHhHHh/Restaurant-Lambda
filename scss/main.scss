@@ -118,6 +118,7 @@ body {
     }
 
     &__link {
+      position: relative;
       text-decoration: none;
       color: #ffffff;
       font-family: "Gentium Book Basic";
@@ -126,13 +127,21 @@ body {
       border-top: 6px solid rgba(#ffffff, 0);
       padding-top: 31px;
       transition: .2s ease-in;
-
       &:hover {
-        border-top: 6px solid rgba(#ffffff, .7);
+        &::before {
+          width: 100%;
+        }
       }
 
-      &_active {
-        border-top: 6px solid rgba(#ffffff, .7);
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: 100%;
+        left: 0;
+        background-color: rgba(#fff, .7);
+        width: 0;
+        height: 6px;
+        transition: .3s;
       }
     }
   }
